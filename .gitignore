@@ -1,0 +1,72 @@
+# ==================================
+# 1. C++ / 编译中间文件
+# ==================================
+# 编译产生的对象文件和动态/静态库
+*.o
+*.obj
+*.dll
+*.lib
+*.a
+*.so
+*.out
+*.exe
+
+# CMake 产生的临时文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeScripts/
+build/
+out/
+
+# Visual Studio 相关 (如果用 VS 编译)
+.vs/
+*.sln.docstates
+*.suo
+*.user
+
+# ==================================
+# 2. Qt 专属文件
+# ==================================
+# Qt Creator 自动生成的构建目录 (通常以 build- 开头)
+build-*/
+
+# 用户本地的项目配置 (每个人的电脑环境不同，绝对不能上传)
+*.pro.user
+*.pro.user.*
+
+# Qt 编译过程自动生成的中间代码
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile*
+
+# ==================================
+# 3. Python 专属文件
+# ==================================
+# 字节码缓存 (最容易烦人的垃圾文件)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境 (千万别把几十GB的运行环境传上去)
+venv/
+.env
+.venv/
+env/
+
+# ==================================
+# 4. 操作系统与 IDE 产生的隐藏文件
+# ==================================
+# Windows 和 macOS 的缩略图/目录属性文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 常用编辑器配置 (避免不同人的编辑器配置冲突)
+.idea/
+.vscode/
+*.swp
